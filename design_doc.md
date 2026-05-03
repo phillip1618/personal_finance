@@ -1,5 +1,9 @@
 # Design Document
 
+## Purpose
+
+We want to consolidate financial information into one centralized location (whether it be a database or a dashboard) and automate some manual tasks for keeping track of finances.
+
 ## Functionality
 
 - Create a new Google Sheet within the Finance statements directory, automatically filling in the transactions. Perhaps we could also use machine learning to autofill the transaction categories based on the transaction historical data.
@@ -15,3 +19,17 @@
 - Dashboarding: PowerBI
 - Database: dbt, PostgresQL
 - Infrastructure: Docker, GitHub Actions(?), Azure DevOps(?), Talend(?)
+
+## Repo Structure
+
+.
+├── src/
+│   ├── main.py
+│   ├── utils.py
+│   ├── import/
+│   ├── export/
+├── tests/
+├── assets/
+├── .gitignore
+├── LICENSE
+└── README.md
